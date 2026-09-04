@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velora | Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container-fluid min-vh-100 d-flex align-items-center py-4 py-lg-5">
+    <div class="row w-100 g-4 align-items-stretch">
+      <div class="col-lg-7">
+        <section class="hero-card h-100 p-4 p-lg-5 text-white rounded-4 shadow-sm">
+          <div class="badge text-uppercase fw-semibold mb-3">Velora</div>
+          <h1 class="display-5 fw-bold mb-3">Welcome back to your favorite shopping experience.</h1>
+          <p class="lead mb-4">
+            Sign in to unlock exclusive deals, track orders in real time, and save your favorite products.
+          </p>
+          <ul class="list-unstyled d-grid gap-3">
+            <li><span class="me-2">✓</span>Fast same-day delivery options</li>
+            <li><span class="me-2">✓</span>Secure checkout with saved addresses</li>
+            <li><span class="me-2">✓</span>Personalized recommendations every week</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="col-lg-5">
+        <section class="card border-0 shadow-sm rounded-4 p-4 p-lg-4">
+          <form id="loginForm" class="needs-validation" novalidate>
+            <div class="mb-4">
+              <p class="text-primary fw-semibold text-uppercase small mb-2">E-commerce access</p>
+              <h2 class="h3 fw-bold mb-2">Login to your account</h2>
+              <p class="text-muted mb-0">Enter your email and password to continue</p>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Email address</label>
+              <input type="email" class="form-control form-control-lg" id="email" placeholder="you@example.com"
+                required />
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label fw-semibold">Password</label>
+              <div class="input-group">
+                <input type="password" class="form-control form-control-lg" id="password"
+                  placeholder="Enter your password" required />
+                <button class="btn btn-outline-secondary" type="button" id="togglePassword">Show</button>
+              </div>
+              <div class="invalid-feedback">Please enter your password.</div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rememberMe" />
+                <label class="form-check-label text-muted" for="rememberMe">Remember me</label>
+              </div>
+              <a href="#" class="text-decoration-none fw-semibold">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg w-100 mb-3">Sign in</button>
+
+            <div class="d-flex align-items-center my-3">
+              <hr class="flex-grow-1" />
+              <span class="px-2 text-muted small">or continue with</span>
+              <hr class="flex-grow-1" />
+            </div>
+
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <button type="button" class="btn btn-outline-secondary w-100">Google</button>
+              </div>
+              <div class="col-6">
+                <button type="button" class="btn btn-outline-secondary w-100">Apple</button>
+              </div>
+            </div>
+
+            <p class="text-center text-muted mb-0">
+              New to Velora? <a href="../Sign in/Sign up.html" class="fw-semibold text-decoration-none">Create account</a>
+            </p>
+
+            <div id="formMessage" class="alert alert-success mt-3 d-none" role="alert"></div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

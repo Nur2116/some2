@@ -1,0 +1,39 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f5f7fb;
+  color: #162033;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2ff 0%, #f9fafc 100%);
+}
+
+.product-hero {
+  min-height: 320px;
+  overflow: hidden;
+}
+
+.product-hero img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-hero img:hover {
+  transform: scale(1.6);
+  transition: all 0.8s ease-in-out;
+}
+
+@media (max-width: 991.98px) {
+  .product-hero {
+    min-height: 280px;
+  }
+}

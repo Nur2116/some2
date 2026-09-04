@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1f1a17;
+  background: #fffdfb;
+}
+
+.navbar {
+  background: rgba(18, 15, 13, 0.8);
+  backdrop-filter: blur(8px);
+  transition: background 0.3s ease;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 7rem 0 4rem;
+  background:
+    linear-gradient(90deg, rgba(14, 10, 8, 0.82), rgba(14, 10, 8, 0.45)),
+    url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+}
+
+.hero h1,
+.display-6,
+.display-4 {
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.9);
+  color: #1f1a17;
+}
+
+.section-label {
+  color: #b88b3f;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.breadcrumb-item a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: #fff;
+}
+
+.btn-gold {
+  background: #b88b3f;
+  color: #fff;
+  border: none;
+}
+
+.btn-outline-gold {
+  background: transparent;
+  color: #b88b3f;
+  border: 2px solid #b88b3f;
+}
+
+.btn-gold:hover {
+  background: #8f6428;
+  color: #fff;
+}
+
+
+
+.product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12) !important;
+}
+
+.product-card img {
+  height: 240px;
+  object-fit: cover;
+}
+
+.bg-soft {
+  background: #f8efe7;
+}
+
+.about-list li {
+  padding: 0.4rem 0;
+  color: #6c6763;
+}
+
+.toast-message {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  background: #1f1a17;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 1050;
+}
+
+.toast-message.show {
+  opacity: 1;
+  transform: translateY(0);
+}
